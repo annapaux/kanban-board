@@ -29,8 +29,10 @@ flask run
  
 ### Unit Testing with Pytest 
  Navigate into the folder to run the following commands.
-```cd .../kanban-board```
-```python3 -m pytest```
+```
+cd .../kanban-board
+python3 -m pytest
+```
 
 
 ## What you should see
