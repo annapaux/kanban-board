@@ -37,7 +37,7 @@ python3 -m pytest
 ```
 
 
-## What you should see
+## Your Kanban Board
 
 <p align="center">
  <img width="400" height="150" src="https://github.com/annapaux/kanban-board/blob/master/images/register.png">
