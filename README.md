@@ -36,7 +36,7 @@ flask run
 ## What you should see
 
 <p align="center">
- <img width="400" height="100" src="https://github.com/annapaux/kanban-board/blob/master/images/register.png">
- <img width="400" height="100" src="https://github.com/annapaux/kanban-board/blob/master/images/login.png">
+ <img width="400" height="150" src="https://github.com/annapaux/kanban-board/blob/master/images/register.png">
+ <img width="400" height="150" src="https://github.com/annapaux/kanban-board/blob/master/images/login.png">
  <img width="400" height="300" src="https://github.com/annapaux/kanban-board/blob/master/images/kanban.png">
 </p>
