@@ -1,7 +1,7 @@
 # Kanban-Board
 This app lets users register, log in, and maintain a personalized kanban board to keep track of tasks that are to-do, doing, or done.
 
-
+![kanban board](http:https://github.com/annapaux/kanban-board/blob/master/images/kanban.png)
 
 ### Set Up
 
@@ -21,14 +21,16 @@ pip3 install -r requirements.txt
 export FLASK_APP=kanban
 export FLASK_ENV=development
 flask init-db
+Prints in the terminal 'Initialized the database'
 flask run
 ```
 
 ### Visit the App
-localhost:5000/
+[http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
  
 ### Unit Testing with Pytest 
  Navigate into the folder to run the following commands.
 ```cd .../kanban-board```
 ```python3 -m pytest```
+
