@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+  <!-- <form method="GET" action="/main"> -->
+    <h1>{% block title %} My Kanban Board {% endblock %}</h1>
+  <!-- </form> -->
+{% endblock %}
+
+{% block content %}
+      <form method="POST" action="/add">
+        <legend align="center">Choose a Category
+
+        <div class="center">
+            <input type="radio" id="kanban_1" name="category" value=1 required>
+            <label for="kanban_1"> To do </label>
+            <input type="radio" id="kanban_2" name="category" value=2 required>
+            <label for="kanban_2">Doing</label>
+            <input type="radio" id="kanban_3" name="category" value=3 required>
+            <label for="kanban_3">Done</label>
+        </div>
+        </legend>
+
+        <p>
+          Task
+          <input type="text" id="task" name="body" required>
+        </p>
+
+        <p> <button type="submit">Submit</button> </p>
+      </form>
+
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>To Do 💪</h2>
+        <table>
+          {% for todo in todos %}
+            <tr>
+              <td>
+                {{todo['body']}}
+              </td>
+              <td>
+                <form method="POST" action="./update" style="display: inline">
+                  <input type="submit" value="doing" name=category>
+                  <input type="hidden" value={{todo['id']}} name=taskid>
+                </form>
+              </td>
+              <td>
+                <form method="POST" action="./delete" style="display: inline">
+                  <input type="submit" value=🗑 name=delete>
+                  <input type="hidden" value={{todo['id']}} name=taskid>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+
+      <div class="column" style="background-color:#bbb;">
+        <h2>Doing 🤙</h2>
+        <table>
+          {% for doing in doings %}
+            <tr>
+              <td>
+                {{doing['body']}}
+              </td>
+              <td>
+                <form method="POST" action="./update" style="display: inline">
+                  <input type="submit" value="done" name=category>
+                  <input type="hidden" value={{doing['id']}} name=taskid>
+                </form>
+              </td>
+              <td>
+                <form method="POST" action="./delete" style="display: inline">
+                  <input type="submit" value=🗑 name=delete>
+                  <input type="hidden" value={{doing['id']}} name=taskid>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+
+      <div class="column" style="background-color:#ccc;">
+        <h2>Done 👌</h2>
+        <table>
+          {% for done in dones %}
+            <tr>
+              <td>
+                {{done['body']}}
+              </td>
+              <td>
+                <form method="POST" action="./delete" style="display: inline">
+                  <input type="submit" value=🗑 name=delete>
+                  <input type="hidden" value={{done['id']}} name=taskid>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+
+    <br>
+    <img src="/static/bugs.jpg" alt="bugs" class="center">
+
+{% endblock %}

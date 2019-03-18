@@ -1,0 +1,4 @@
+include kanban/schema.sql
+graft kanban/static
+graft kanban/templates
+global-exclude *.pyc
