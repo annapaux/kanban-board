@@ -16,4 +16,4 @@ setuptools_svn==1.2
 simplejson==3.16.0
 Werkzeug==0.14.1
 wincertstore==0.2
-python==3.6
+python==3
