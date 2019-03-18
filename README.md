@@ -1,8 +1,6 @@
 # Kanban-Board
 This app lets users register, log in, and maintain a personalized kanban board to keep track of tasks that are to-do, doing, or done.
 
-![kanban board](http:https://github.com/annapaux/kanban-board/blob/master/images/kanban.png)
-
 ### Set Up
 
 Download or clone the kanban-board folder.
@@ -34,3 +32,11 @@ flask run
 ```cd .../kanban-board```
 ```python3 -m pytest```
 
+
+## What you should see
+
+<p align="center">
+ <img width="400" height="100" src="https://github.com/annapaux/kanban-board/blob/master/images/register.png">
+ <img width="400" height="100" src="https://github.com/annapaux/kanban-board/blob/master/images/login.png">
+ <img width="400" height="300" src="https://github.com/annapaux/kanban-board/blob/master/images/kanban.png">
+</p>
