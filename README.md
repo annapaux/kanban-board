@@ -5,7 +5,9 @@ This kanban board app lets users register, log in, and maintain a personalized k
 
 Download or clone the kanban-board folder.
 Navigate into the folder to run the following commands.
-```cd .../kanban-board```
+```
+cd .../kanban-board
+```
 
 ### Virtual Environment and Requirements
 ```python
