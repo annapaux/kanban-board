@@ -1,5 +1,5 @@
 # Kanban-Board
-This app lets users register, log in, and maintain a personalized kanban board to keep track of tasks that are to-do, doing, or done.
+This kanban board app lets users register, log in, and maintain a personalized kanban board to keep track of tasks that are to-do, doing, or done.
 
 ### Set Up
 
