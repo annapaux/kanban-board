@@ -20,10 +20,10 @@ pip3 install -r requirements.txt
 ```
 export FLASK_APP=kanban
 export FLASK_ENV=development
-flask init-db
-Prints in the terminal 'Initialized the database'
+flask init-db 
 flask run
 ```
+the `flask init-db` command prints in the terminal 'Initialized the database'
 
 ### Visit the App
 [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
