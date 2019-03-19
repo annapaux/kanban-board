@@ -1,6 +1,3 @@
-
-Authorization looks familiar? The login and registration functionalities are adapted from the [Flaskr Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/).
-
 Organization of the app:
 
 *app.py. is the main program*
@@ -31,3 +28,5 @@ Organization of the app:
 *Static stores css and images*
 - The style.css provides the styling to the authorization components as well as the kanban board.
 - The bugs.jpg might be the most important component of this project, as its sole purpose is to lighten up the user's day.
+
+Authorization looks familiar? The login and registration functionalities are adapted from the [Flaskr Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/).
